@@ -1,0 +1,114 @@
+* {
+    box-sizing: border-box;
+}
+
+.grad1 {
+    background: linear-gradient(45deg, rgba(241, 9, 9, 0.8), rgba(2, 2, 238, 0.6)), url("images/daniel-olah-bnm1QlUJsek-unsplash.jpg");
+    /* width: 100%; */
+}
+
+body {
+    width: 100%;
+    /* overflow: hidden; */
+    margin: 0pt;
+}
+
+.party-main-content {
+    display: block;
+}
+
+.content1 {
+    /* position: relative; */
+    width: 100%;
+    align-content: center;
+}
+
+.content1 img {
+    margin-left: 30%;
+    margin-top: 5%;
+    margin-bottom: 5%;
+}
+
+.content2 img {
+    width: 70%;
+    margin-left: 15%;
+    margin-bottom: 5%;
+    margin-top: 5%;
+    /* box-shadow: 10px 10px 10px 10px rgba(241, 48, 80, 0.5) inset; */
+    box-shadow: 4px 10px 5px rgba(0, 0, 0, 0.4);
+    border-radius: 20px;
+}
+
+.nav-icons {
+    display: flex;
+    width: 70%;
+    margin-bottom: 5%;
+    margin-left: 170px;
+}
+
+.nav-icons a {
+    margin-right: 0pt;
+}
+
+.home {
+    padding-top: 1.5%;
+    width: 40%;
+    margin-top: 2%;
+    margin-left: 20%;
+}
+
+.restart {
+    width: 80%;
+    height: 90%;
+}
+
+@media screen and (max-width: 480px) {
+    .grad1 {
+        background: linear-gradient(45deg, rgba(241, 9, 9, 0.8), rgba(2, 2, 238, 0.6)), url("images/daniel-olah-bnm1QlUJsek-unsplash.jpg");
+        /* width: 100%; */
+    }
+    body {
+        width: 100%;
+        /* overflow: hidden; */
+        /* margin: 0pt; */
+    }
+    .party-main-content {
+        display: block;
+    }
+    .content1 {
+        /* position: relative; */
+        width: 100%;
+        /* align-content: center; */
+    }
+    .content1 img {
+        width: 70%;
+        margin-left: 15%;
+        margin-bottom: 10%;
+        margin-top: 10%;
+    }
+    .content2 img {
+        width: 70%;
+        margin-left: 15%;
+        margin-bottom: 10%;
+        margin-top: 5%;
+        /* box-shadow: 10px 10px 10px 10px rgba(241, 48, 80, 0.5) inset; */
+        box-shadow: 4px 10px 5px rgba(0, 0, 0, 0.4);
+        border-radius: 20px;
+    }
+    .nav-icons {
+        display: flex;
+        width: 70%;
+        margin-bottom: 10%;
+    }
+    .nav-icons a {
+        margin-right: 0pt;
+    }
+    .home {
+        width: 60%;
+        margin-top: 2%;
+        margin-left: 25%;
+    }
+    .restart {
+        width: 140%;
+    }
+}

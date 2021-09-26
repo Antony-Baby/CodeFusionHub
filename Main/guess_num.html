@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Guess the number ! online game free to all">
+    <meta name="keywords" content="Guess the Number, free, free game ,guess the num, Guess the number game, online game, webGame,we bgame,Game">
+    <meta name="author" content="Antony Baby">
+    <title style="font-weight: bold;">The Code Fusion Hub_Guess The Num</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- <link rel="stylesheet" href="style2.css"> -->
+
+    <link rel="stylesheet" href="style_mob.css">
+
+
+    <script src="script_espot.js"></script>
+    <script src="script.js"></script>
+</head>
+
+<body onload="main()" class="grad1">
+
+    <header>
+        <div class="header-container">
+            <img src="images/Title.JPG" alt="">
+        </div>
+
+    </header>
+    <main>
+        <section>
+            <div class="content">
+                <div class="content-container">
+                    <div class="question-wraper">
+                        <div class="tier">
+                            <img id="tier-image" src="images/Level-01.png" alt="">
+                            <h2 id="tier-text">Beginner level</h2>
+                        </div>
+                        <div class="question">
+                            <h2>Select Your Guess !</h2>
+                        </div>
+                    </div>
+                    <div id="hint">
+                        <h3 id="hint-h3">X+10=25</h3>
+                    </div>
+                    <div class="content-options">
+                        <div class="option-1">
+                            <div id="option-1" onclick="option_check(this.textContent)" class="rectangle"></div>
+                        </div>
+                        <div class="option-2">
+                            <div id="option-2" onclick="option_check(this.textContent)" class="rectangle"></div>
+                        </div>
+                        <div class="option-3">
+                            <div id="option-3" onclick="option_check(this.textContent)" class="rectangle "></div>
+                        </div>
+
+                    </div>
+                    <div class="help-button">
+                        <button onclick="help()">Want Help !</button>
+                    </div>
+
+                </div>
+                <div class="level-main">
+                    <div class="level-sub">
+                        <div class="level-text">
+                            <h2 id="level-head">Level 1 / 10</h2>
+                        </div>
+                        <div class="user-level">
+                            <img src="images/star1.png" alt="">
+                            <h2 id="user-level-box">1</h2>
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+        </section>
+        <section>
+            <div id="myModal" class="modal">
+                <!-- <img src="../images/Text_1.jpg" alt=""> -->
+
+                <!-- Modal content -->
+                <div class="modal-content">
+                    <div class="modal-header">
+
+                        <img style="width: 97%;padding-left: 3%;padding-top:
+                                    3%;" src="images/Title.JPG" alt="Guess The
+                                    Number If You Can !!">
+                        <!-- <span class="close">&#10006;</span> -->
+                        <!-- <button id="close">&#10006;</button> -->
+
+                        <h2 id="modalHeader"></h2>
+                    </div>
+                    <div class="modal-body">
+                        <p id="modalText1"></p>
+                        <p id="modalText2"></p>
+                    </div>
+                    <div class="modal-footer">
+                        <button id="modalbutton1" class="modalbutton" onclick="modalbutton_click(this.textContent)"></button>
+                        <button id="modalbutton2" class="modalbutton" onclick="modalbutton_click(this.textContent)"></button>
+                    </div>
+
+                </div>
+
+
+            </div>
+        </section>
+
+        <section>
+            <form id="login-form" action="#">
+                <div class="wraper">
+                    <div class="input">
+                        <div class="uname">
+                            <label class="uname-label">Username  </label>
+                            <br>
+                            <input type="text" id="uname" name="uname">
+                        </div>
+                        <div class="pswd">
+                            <label class="pswd-label">Password  </label>
+                            <br>
+                            <input type="password" id="pswd" name="pswd">
+                        </div>
+                    </div>
+                    <div class="login-btn-div">
+                        <button class="login-btn" onclick="validate()">Login</button>
+                    </div>
+
+                </div>
+
+            </form>
+        </section>
+        <section>
+            <!-- Ads-main contents are coming from js file -->
+            <div id="ads-main"></div>
+        </section>
+    </main>
+    <footer>
+        <div class="footer">
+            <h2>The Code Fusion Hub</h2>
+            <div class="nav">
+                <nav class="footer-nav-1">
+                    <a href="#">Home</a>
+                    <a href="#">Top</a>
+                </nav>
+                <h3>Designed and Developed by
+                    <span>Antony Baby</span>
+                </h3>
+                <nav class="footer-nav-2">
+                    <a href="#">About</a>
+                    <a href="#">Contact US</a>
+                </nav>
+            </div>
+        </div>
+
+    </footer>
+
+
+</body>
+
+</html>

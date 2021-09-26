@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>login!</title>
+    <style>
+        .wraper {
+            padding: 10px 10px 10px 10px;
+            display: block;
+            /* align-self: center; */
+            margin-left: 30px;
+            margin-right: 20px;
+            background: linear-gradient(45deg, rgba(241, 9, 9, 0.8), rgba(2, 2, 238, 0.6));
+        }
+        /* .input {
+            /* background-color: azure; */
+        /* display: block; */
+        /* width: 300px; */
+        /* } */
+        
+        label {
+            /* width: 200px; */
+            /* height: auto; */
+            /* padding-right: 20px; */
+            margin-right: 0pt;
+            color: white;
+        }
+        
+        input {
+            width: 300px;
+            height: 30px;
+            /* margin-right: 10px; */
+            margin-bottom: 10px;
+            margin-top: 2px;
+            margin-left: 0pt;
+            border: none;
+        }
+        
+        .login-btn {
+            margin-left: 175px;
+            width: 130px;
+            height: 40px;
+            margin-top: 20px;
+            background-color: rgba(230, 203, 203, 0.5);
+            border-radius: 25px;
+            border-color: white;
+            color: red;
+            font-weight: bold;
+            font-size: 15px;
+            /* box-shadow: rgba(241, 9, 9, 0.8); */
+        }
+        
+        #login-form {
+            /* background-color: aqua; */
+            padding-top: 20%;
+            padding-bottom: 20%;
+            margin: 0;
+            margin-left: 450px;
+            display: inline-block;
+            display: none;
+            /* width: 500px; */
+        }
+        
+        #main-load {
+            padding-top: 20%;
+            padding-bottom: 20%;
+            margin: 0;
+            margin-left: 450px;
+            display: inline-block;
+        }
+        
+        .main a {
+            margin-left: 20px;
+            /* margin-left: 175px; */
+            width: 180px;
+            height: 50px;
+            /* margin-top: 20px; */
+            background-color: rgba(20, 208, 241, 0.5);
+            border-radius: 25px;
+            border-color: rgb(241, 239, 239);
+            color: red;
+            font-weight: bold;
+            /* font-size: 15px; */
+            text-decoration: none;
+        }
+    </style>
+</head>
+
+<body>
+
+
+    <form action="" id="main-load">
+        <div class="main">
+            <a href="guess_num.html" class="guest">Continue as guest</a>
+            <a class="sign-in" onclick="login_form()">Sign in</a>
+
+        </div>
+
+    </form>
+
+    <form id="login-form" action="#">
+        <div class="wraper">
+            <div class="input">
+                <div class="uname">
+                    <label class="uname-label">Username  </label>
+                    <br>
+                    <input type="text" id="uname" name="uname">
+                </div>
+                <div class="pswd">
+                    <label class="pswd-label">Password  </label>
+                    <br>
+                    <input type="password" id="pswd" name="pswd">
+                </div>
+            </div>
+            <div class="login-btn-div">
+                <button class="login-btn" onclick="validate()">Login</button>
+            </div>
+
+        </div>
+
+    </form>
+</body>
+<script>
+    function validate() {
+        uname = "Antony";
+        pswd = "a";
+        var username = document.getElementById("uname").value;
+        var password = document.getElementById("pswd").value;
+        if (username == uname && password == pswd) {
+            // document.getElementById("login-form").style.display = "none";
+            // document.getElementById("main-load").style.display = "none";
+            // window.location.replace("guess_num.html");
+            // location.href = "guess_num.html";
+            // window.open("guess_num.html", "_self");
+
+
+        } else {
+            window.alert("No1");
+            document.getElementById("main-load").style.display = "none";
+            document.getElementById("login-form").style.display = "inline-block";
+        }
+    }
+
+    function login_form() {
+        document.getElementById("main-load").style.display = "none";
+        document.getElementById("login-form").style.display = "inline-block";
+    }
+</script>
+
+</html>
